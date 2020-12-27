@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" style="width: 50%;">
+        <form action="" class="form-group mt-3">
+            <label for="id">Id:</label>
+            <input type="text" class="form-control col-md-5" placeholder="NIC">
+            <label for="name" class="mt-3">Name</label>
+            <input type="text" class="form-control col-md-5 " placeholder="Name">
+            <label for="emil" class="mt-3">Email</label>
+            <input type="email" class="form-control" placeholder="Email">
+           <br><br>
+           <button class="btn btn-primary col-md-3" >SUBMIT</button>
+        </form>
+        <hr class="mt-5"/>
+        <table class="table justify-content-center">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+            </tr>
+            <tr *ngFor="let e of employee">
+                <td>{{e.id}}</td>
+                <td>{{e.name}}</td>
+                <td>{{e.email}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
